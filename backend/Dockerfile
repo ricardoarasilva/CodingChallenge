@@ -1,0 +1,10 @@
+FROM node:16.3.0-alpine AS base
+
+WORKDIR /app
+# Adicionando `/app/node_modules/.bin` para o $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+# Instalando dependências da aplicação e armazenando em cache.
+COPY package.json /app/package.json
+RUN npm install --silent
+# start app
+CMD ["npm", "start"]
