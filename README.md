@@ -5,3 +5,7 @@ This project was developed using ReactJS, NodeJS Express, MySQL and Docker. The 
 In the project directory, you can run:
 
 ### `docker-compose up`
+
+After project ready access
+
+### `http://localhost:3000/`
